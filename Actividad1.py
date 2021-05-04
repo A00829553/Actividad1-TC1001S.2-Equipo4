@@ -23,6 +23,11 @@ def square(start, end):
 
 def circulo(start, end):
     "Draw circle from start to end."
+    up()
+    goto(start.x, start.y)
+    down()
+    print(towards(end.x,end.y))
+    left(towards(end.x,end.y))
     begin_fill()
     circle(start.x-end.x)
     end_fill()
