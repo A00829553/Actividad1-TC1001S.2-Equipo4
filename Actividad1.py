@@ -34,23 +34,22 @@ def circulo(start, end):
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
+    pass
+
+
+def triangle(start, end):
+    "Draw triangle from start to end."
     up()
     goto(start.x, start.y)
     down()
     begin_fill()
     forward(end.x - start.x)
-    left(90)
-    forward(end.y - start.y)
-    left(90)
+    left(120)
     forward(end.x - start.x)
-    left(90)
-    forward(end.y - start.y)
-    left(90)
+    right(60)
+    backward(end.x - start.x)
+    right(60)
     end_fill()
-
-def triangle(start, end):
-    "Draw triangle from start to end."
-    pass  # TODO
 
 def tap(x, y):
     "Store starting point or draw shape."
